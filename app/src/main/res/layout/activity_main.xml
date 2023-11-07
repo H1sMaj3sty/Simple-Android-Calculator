@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#084040"
+        android:paddingLeft="12dp"
+        android:text="Simple Calculator"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/bilangan1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Bilangan 1"
+        android:inputType="number"
+        android:paddingTop="40dp"
+        android:layout_below="@id/judul"
+        />
+
+    <EditText
+        android:id="@+id/bilangan2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Bilangan 2"
+        android:inputType="number"
+        android:paddingTop="45dp"
+        android:layout_below="@id/bilangan1"
+        />
+
+    <Button
+        android:id="@+id/tambah"
+        android:onClick="tambah"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="+ (Add)"
+        android:textSize="25sp"
+        android:layout_below="@id/bilangan2"
+        android:layout_marginTop="15dp"
+        />
+
+    <Button
+        android:id="@+id/kurang"
+        android:onClick="kurang"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="- (Minus)"
+        android:textSize="25sp"
+        android:layout_below="@id/tambah"
+        />
+
+    <Button
+        android:id="@+id/kali"
+        android:onClick="kali"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="* (Multiply)"
+        android:textSize="25sp"
+        android:layout_below="@id/kurang"
+        />
+
+    <Button
+        android:id="@+id/bagi"
+        android:onClick="bagi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="/ (Divide)"
+        android:textSize="25sp"
+        android:layout_below="@id/kali"
+        />
+
+</RelativeLayout>
